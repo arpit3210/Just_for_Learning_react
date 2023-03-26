@@ -11,9 +11,14 @@ class About extends React.Component
 
 componentDidMount()
 {
-    console.warn("props",this.props);
+    console.warn("props",this.props.Name);
 }
 
+
+componentDidUpdate()
+{
+    console.warn("props",this.props.Name);
+}
 
 
 
@@ -55,6 +60,8 @@ componentDidMount()
 
               <button onClick={()=>{this.setState({name:"Kuch bhi change" , age: "kuch jyada hai"})}}>Change State</button> */}
 
+
+<h2>{this.props.Name}</h2>
             </div>
         )
     }
