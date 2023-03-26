@@ -10,12 +10,13 @@ function Contact(props)
     // },[age,Name])
 
 
-
-
     // Using Hooks with Props
      useEffect(()=>{
-        console.warn(props.Name);
-     })
+        console.warn("Props check1 with Name",props.Name);
+     });
+     useEffect(()=>{
+        console.warn("Props check2 with Name",props.Name);
+     }, [props.Name]);
     return(
 
         <div>
