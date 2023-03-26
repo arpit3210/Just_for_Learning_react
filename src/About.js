@@ -12,12 +12,15 @@ class About extends React.Component
 componentDidMount()
 {
     console.warn("props in Did Mount",this.props.Name);
+    //this Life Cycle Method updates always after when component Mount, (just like Born)
 }
 
 
 componentDidUpdate()
 {
     console.warn("props in Did Update",this.props.Name);
+    // ccomponent DidUpdate always runs after some update, after that if You want change something 
+    // you can change
 }
 
 

@@ -1,6 +1,6 @@
 // import React,{useEffect,useState} from 'react'
-import React from 'react'
-function Contact()
+import React, { useEffect } from 'react'
+function Contact(props)
 {
     // const [Name,SetName]=useState("Arpit");
     // const [age,setage]=useState("Minimum age")
@@ -8,6 +8,14 @@ function Contact()
     // {
     //     console.warn("hello from hooks")
     // },[age,Name])
+
+
+
+
+    // Using Hooks with Props
+     useEffect(()=>{
+        console.warn(props.Name);
+     })
     return(
 
         <div>
@@ -17,6 +25,12 @@ function Contact()
             <h1>{(age)} </h1>
             <button onClick={()=>{setage("Maximum Age")}}>Change to maximum</button>
             <button onClick={()=>{SetName("Arpit Singh")}}>Show FullName</button> */}
+
+
+            {/* // Using Props in functionbal Component , For this we have to define with function  */}
+       
+       <h2>{props.Name}</h2>
+       
         </div>
     );
 }
