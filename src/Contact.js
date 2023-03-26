@@ -1,5 +1,6 @@
 // import React,{useEffect,useState} from 'react'
-import React, { useEffect } from 'react'
+// import React, { useEffect } from 'react'
+import React from "react";
 function Contact(props)
 {
     // const [Name,SetName]=useState("Arpit");
@@ -11,12 +12,12 @@ function Contact(props)
 
 
     // Using Hooks with Props
-     useEffect(()=>{
-        console.warn("Props check1 with Name",props.Name);
-     });
-     useEffect(()=>{
-        console.warn("Props check2 with Name",props.Name);
-     }, [props.Name]);
+    //  useEffect(()=>{
+    //     console.warn("Props check1 with Name",props.Name);
+    //  });
+    //  useEffect(()=>{
+    //     console.warn("Props check2 with Name",props.Name);
+    //  }, [props.Name]);
     return(
 
         <div>
@@ -30,7 +31,7 @@ function Contact(props)
 
             {/* // Using Props in functionbal Component , For this we have to define with function  */}
        
-       <h2>{props.Name}</h2>
+       {/* <h2>{props.Name}</h2> */}
        
         </div>
     );
