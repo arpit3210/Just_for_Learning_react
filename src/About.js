@@ -11,13 +11,13 @@ class About extends React.Component
 
 componentDidMount()
 {
-    console.warn("props",this.props.Name);
+    console.warn("props in Did Mount",this.props.Name);
 }
 
 
 componentDidUpdate()
 {
-    console.warn("props",this.props.Name);
+    console.warn("props in Did Update",this.props.Name);
 }
 
 
