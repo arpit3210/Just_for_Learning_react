@@ -18,8 +18,6 @@ function App() {
 
       <Contact />
 
-
-
       {/* <button onClick={()=>{setName("Arpit Singh") }}>Change full name</button> */}
     </div>
   );

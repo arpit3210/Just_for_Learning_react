@@ -18,6 +18,22 @@ function Contact(props)
     //  useEffect(()=>{
     //     console.warn("Props check2 with Name",props.Name);
     //  }, [props.Name]);
+
+
+    const test  =()=>
+{
+    console.log("yes you click test ");
+}
+
+
+const changing =()=>
+{
+    console.log("Changing Data");
+}
+
+
+
+
     return(
 
         <div>
@@ -28,11 +44,23 @@ function Contact(props)
             <button onClick={()=>{setage("Maximum Age")}}>Change to maximum</button>
             <button onClick={()=>{SetName("Arpit Singh")}}>Show FullName</button> */}
 
-
             {/* // Using Props in functionbal Component , For this we have to define with function  */}
        
        {/* <h2>{props.Name}</h2> */}
        
+
+       <input type="text"  onChange={changing}/>
+
+
+
+
+
+{/* //In button we always use function with onclick for bindng  */}
+       <button onClick={test}>click</button>
+
+
+
+
         </div>
     );
 }
